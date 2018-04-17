@@ -1,0 +1,180 @@
+* {
+     box-sizing: border-box;
+     font-weight: bold;
+   }
+
+
+.container {
+     width: 100%;
+     margin-top: 30px;
+     display: flex;
+     flex-direction: column;
+   }
+
+/* header */
+.name{
+     width: 70%;
+     text-align: right;
+   }
+
+
+.uppercase {
+     text-transform: uppercase;
+   }
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+     color: #6d6e6f;
+   }
+
+
+.header {
+  overflow: auto;
+  height: auto;
+  }
+
+
+.header_inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.pic {
+  width: 20%;
+  margin-right: 40px;
+  position: relative;
+}
+
+
+.logo {
+  max-width: 77px;
+}
+
+/* line separator */
+.separator {
+  background-color: #7d97ad;
+  height: 5px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* content */
+.main {
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+.bigimg {
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Featured_work */
+.works {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.figure {
+  width: 100%;
+  position: relative;
+  right: 40px;
+}
+
+
+.center {
+  text-align: center;
+  position: relative;
+  left: -50px;
+}
+
+
+.top {
+  position: relative;
+  top: -10px;
+}
+
+
+figcaption {
+  height: 30%;
+  width: 100%;
+}
+
+
+.img {
+  max-width: 100%;
+  width: 100%;
+}
+
+
+.featured_work {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* responsive */
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .works {
+    flex-direction: row;
+  }
+
+
+  .header_inner {
+    flex-direction: row-reverse;
+  }
+
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 599px) {
+  .name {
+    width: 100%;
+    text-align: left;
+    order: 1;
+  }
+
+
+  .pic {
+    width: 100%;
+    order: 2;
+  }
+
+}
+@media screen and (min-width: 1000px) {
+  .works {
+    flex-direction: row;
+  }
+
+
+.container {
+  width: 70%;
+  margin-left: 200px;
+  }
+
+
+.header_inner {
+  flex-direction: row-reverse;
+  }
+
+}
